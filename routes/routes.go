@@ -7,4 +7,7 @@ import (
 
 func SetUpRoutes(r *gin.Engine) {
 	r.POST("/upload-to-s3", src.GenerateAndUploadQRCode)
+	r.PUT("/update-qrcode", src.UpdateUploadQRCode)
+	// r.DELETE("/delete/:assetTag", src.DeleteQRCode)
+
 }
